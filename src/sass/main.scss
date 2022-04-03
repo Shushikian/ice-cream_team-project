@@ -6,4 +6,9 @@
 // Стили для файла с примером HTML-фрагмента
 @import './util/variables';
 @import './util/mixin';
+@import './base/common';
+@import './base/reset';
+@import './layout/advantages';
+
+
 @import './components/gallery';
