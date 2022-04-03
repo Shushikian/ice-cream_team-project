@@ -1,0 +1,63 @@
+.mobile__menu__button {
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    position: absolute;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    top: 52px;
+    left: 504px;
+    border: none;
+    background-color: transparent;
+
+    .mobile__menu__icons {
+      .icon__burger,
+      .icon__cross {
+        fill: $btn-dark-bg-color;
+      }
+    }
+
+    .mobile__menu__button {
+      &:hover,
+      &:focus {
+        .icon__burger,
+        .icon__cross {
+          fill: $hover-color;
+        }
+      }
+    }
+
+    .mobile__menu__icons {
+      width: 20px;
+      height: 12px;
+    }
+
+    .icon__cross {
+      display: none;
+    }
+
+    &.is-open {
+      .icon__cross {
+        display: block;
+      }
+    }
+
+    &.is-open {
+      .icon__burger {
+        display: none;
+      }
+    }
+  }
+}
+
+.header__mobile {
+  display: none;
+}
+
+@media screen and(min-width:1280px) {
+  .mobile__menu__button {
+    display: none;
+  }
+  .header__mobile {
+    display: none;
+  }
+}

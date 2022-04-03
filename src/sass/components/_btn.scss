@@ -34,15 +34,29 @@
   }
 
   &-main {
-    height: 44px;
-    padding: 11px 17px;
-    border: 1px solid transparent;
-    border-radius: 22px;
-    outline: none;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(21 / 16);
-    cursor: pointer;
-    text-decoration: none;
+    @media screen and (min-width: 1280px) {
+      height: 44px;
+      padding: 11px 17px;
+      border: 1px solid transparent;
+      border-radius: 22px;
+      outline: none;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: calc(21 / 16);
+      cursor: pointer;
+      text-decoration: none;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1280px) {
+      height: 24px;
+      padding: 7px 15px;
+      border: 1px solid transparent;
+      border-radius: 20px;
+      outline: none;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: calc(10 / 8);
+      cursor: pointer;
+      text-decoration: none;
+    }
   }
 }

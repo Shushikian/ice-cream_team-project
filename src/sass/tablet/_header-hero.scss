@@ -1,16 +1,16 @@
 .container {
-  @media screen and (min-width: 1280px) {
-    width: 1280px;
-    height: 665px;
-    padding-left: 115px;
-    padding-right: 115px;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    width: 768px;
+    height: 399px;
+    padding-left: 34px;
+    padding-right: 34px;
     margin: 0 auto;
-    background-image: url(../images/cafes-number.png), url(../images/foodtrucks-number.png),
-      url(../images/girl-pic.png), url(../images/ice-cream.png), url(../images/eclipse-circle.png),
-      url(../images/milk-pic.png);
+    background-image: url(../images/cafes-tab.png), url(../images/foodtrucks-tab.png),
+      url(../images/girl-tab.png), url(../images/icecream-tab.png), url(../images/circle-tab.png),
+      url(../images/milk-tab.png);
     background-repeat: no-repeat;
-    background-position: bottom 432px right 97px, bottom 341px right 97px, bottom 0px right 109px,
-      bottom 0px right 450px, bottom 75px right 267px, bottom 45px right 1015px;
+    background-position: bottom 261px right 34px, bottom 205px right 34px, bottom 0px right 34px,
+      bottom 0px right 247px, bottom 46px right 137px, bottom 28px right 610px;
   }
 }
 
@@ -19,8 +19,7 @@ header {
 }
 
 .header__bar {
-  @media screen and (min-width: 1280px) {
-    display: flex;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
     position: relative;
     align-items: center;
     padding-top: 38px;
@@ -28,15 +27,11 @@ header {
     .header__logo {
       position: absolute;
       top: 37px;
-      left: -70px;
-    }
-
-    .header__mobile {
-      display: none;
+      left: 0px;
     }
 
     .header__nav-list {
-      display: flex;
+      display: none;
       margin-left: 240px;
 
       .header__nav-item {
@@ -63,7 +58,7 @@ header {
     }
     .btn-header {
       position: relative;
-      margin-left: 110px;
+      margin-left: auto;
 
       &::after {
         position: absolute;
@@ -80,16 +75,16 @@ header {
 }
 
 .hero-container {
-  @media screen and (min-width: 1280px) {
-    margin-top: 84px;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    margin-top: 15px;
 
     .main-theme {
-      width: 277px;
+      width: 162px;
       font-family: 'Titan One';
       font-style: normal;
       font-weight: 400;
-      font-size: 38px;
-      line-height: 1.16;
+      font-size: 22px;
+      line-height: 1.13;
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: $btn-light-bg-color;
@@ -98,8 +93,8 @@ header {
         font-family: 'Titan One';
         font-style: normal;
         font-weight: 400;
-        font-size: 58px;
-        line-height: 0.89;
+        font-size: 34px;
+        line-height: 0.91;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: $btn-dark-bg-color;
@@ -109,8 +104,8 @@ header {
 }
 
 .hero__btns {
-  @media screen and (min-width: 1280px) {
-    margin-top: 25px;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    margin-top: 20px;
 
     .btn-main {
       margin-right: 15px;
@@ -123,25 +118,25 @@ header {
 }
 
 .description {
-  @media screen and (min-width: 1280px) {
-    margin-top: 112px;
-    margin-left: 180px;
+  @media screen and (min-width: 768px) and (max-width: 1280px) {
+    margin-top: 66px;
+    margin-left: 154px;
 
     .description__text {
       position: relative;
-      width: 200px;
+      width: 114px;
       font-family: 'DM Sans';
       font-style: normal;
       font-weight: 400;
-      font-size: 14px;
-      line-height: 1.42;
+      font-size: 8px;
+      line-height: 1.5;
       color: $btn-light-bg-color;
     }
 
     .description__btn {
-      width: 26px;
-      height: 26px;
-      margin-top: 20px;
+      width: 18px;
+      height: 18px;
+      margin-top: 7px;
       padding: 0;
       border-radius: 50%;
       border: none;
