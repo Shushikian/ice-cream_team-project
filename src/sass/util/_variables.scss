@@ -1,13 +1,15 @@
-$current-color-active-link: #d41443;
-$btn-dark-color: #ffffff;
-$btn-dark-bg-color: #d41443;
-$btn-light-color: #d41443;
-$btn-light-bg-color: #ffffff;
-$btn-dark-hover-bg-color: #c7133e;
-$btn-light-hover-bg-color: #ecebeb;
-$black-color: #000;
-$white-color: #fff;
-$hover-color: #d41443;
+:root {
+  --current-color-active-link: #d41443;
+  --btn-dark-color: #ffffff;
+  --btn-dark-bg-color: #d41443;
+  --btn-light-color: #d41443;
+  --btn-light-bg-color: #ffffff;
+  --btn-dark-hover-bg-color: #c7133e;
+  --btn-light-hover-bg-color: #ecebeb;
+  --black-color: #000;
+  --white-color: #fff;
+  --hover-color: #d41443;
+}
 
 p,
 h1,
@@ -36,7 +38,7 @@ body {
   font-size: 16px;
 }
 .current {
-  color: $current-color-active-link;
+  color: var(--current-color-active-link);
 }
 container-desk {
   max-width: 1280px;

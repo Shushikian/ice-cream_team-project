@@ -1,20 +1,20 @@
 .btn {
   &-light {
-    color: $btn-light-color;
-    background-color: $btn-light-bg-color;
+    color: var(--btn-light-color);
+    background-color: var(--btn-light-bg-color);
     &:focus,
     &:hover {
-      background-color: $btn-light-hover-bg-color;
+      background-color: var(--btn-light-hover-bg-color);
       cursor: pointer;
     }
   }
 
   &-dark {
-    color: $btn-dark-color;
-    background-color: $btn-dark-bg-color;
+    color: var(--btn-dark-color);
+    background-color: var(--btn-dark-bg-color);
     &:focus,
     &:hover {
-      background-color: $btn-dark-hover-bg-color;
+      background-color: var(--btn-dark-hover-bg-color);
       cursor: pointer;
     }
   }

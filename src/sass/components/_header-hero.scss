@@ -53,11 +53,11 @@ header {
         font-weight: 700;
         font-size: 16px;
         line-height: 1.3;
-        color: $btn-light-bg-color;
+        color: var(--btn-light-bg-color);
 
         &:hover,
         &:focus {
-          color: $btn-dark-bg-color;
+          color: var(--btn-dark-bg-color);
         }
       }
     }
@@ -92,7 +92,7 @@ header {
       line-height: 1.16;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: $btn-light-bg-color;
+      color: var(--btn-light-bg-color);
 
       .colorized {
         font-family: 'Titan One';
@@ -102,7 +102,7 @@ header {
         line-height: 0.89;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: $btn-dark-bg-color;
+        color: var(--btn-dark-bg-color);
       }
     }
   }
@@ -135,7 +135,7 @@ header {
       font-weight: 400;
       font-size: 14px;
       line-height: 1.42;
-      color: $btn-light-bg-color;
+      color: var(--btn-light-bg-color);
     }
 
     .description__btn {

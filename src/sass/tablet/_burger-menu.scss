@@ -12,7 +12,7 @@
     .mobile__menu__icons {
       .icon__burger,
       .icon__cross {
-        fill: $btn-dark-bg-color;
+        fill: var(--btn-dark-bg-color);
       }
     }
 
@@ -21,7 +21,7 @@
       &:focus {
         .icon__burger,
         .icon__cross {
-          fill: $hover-color;
+          fill: var(--hover-color);
         }
       }
     }
