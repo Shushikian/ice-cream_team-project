@@ -1,18 +1,43 @@
+.container {
+  @mixin desk {
+    @media screen and (width: 1200px) {
+      @content;
+    }
+  }
+  max-width: 1280px;
+  height: 665px;
+  padding-left: 115px;
+  padding-right: 115px;
+  margin: 0 auto;
+  background-image: url(../images/cafes-number.png), url(../images/foodtrucks-number.png),
+    url(../images/girl-pic.png), url(../images/ice-cream.png), url(../images/eclipse-circle.png),
+    url(../images/milk-pic.png);
+  background-repeat: no-repeat;
+  background-position: bottom 432px right 97px, bottom 341px right 97px, bottom 0px right 109px,
+    bottom 0px right 450px, bottom 75px right 267px, bottom 45px right 1015px;
+}
+
 header {
   background-color: #ffb8ca;
 }
 
 .header__bar {
   display: flex;
+  position: relative;
   align-items: center;
   padding-top: 38px;
 
-  .header__nav__list {
-    display: flex;
-    margin-right: 110px;
-    margin-left: 110px;
+  .header__logo {
+    position: absolute;
+    top: 37px;
+    left: -70px;
+  }
 
-    .header__nav__item {
+  .header__nav-list {
+    display: flex;
+    margin-left: 240px;
+
+    .header__nav-item {
       margin-right: 35px;
 
       &:last-child {
@@ -20,7 +45,7 @@ header {
       }
     }
 
-    .header__nav__link {
+    .header__nav-link {
       font-family: 'DM Sans';
       font-style: normal;
       font-weight: 700;
@@ -36,6 +61,7 @@ header {
   }
   .btn-header {
     position: relative;
+    margin-left: 110px;
 
     &::after {
       position: absolute;
@@ -79,11 +105,19 @@ header {
 
 .hero__btns {
   margin-top: 25px;
+
+  .btn-main {
+    margin-right: 15px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .description {
   margin-top: 112px;
-  padding-bottom: 102px;
+  margin-left: 180px;
 
   .description__text {
     position: relative;

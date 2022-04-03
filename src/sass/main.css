@@ -81,6 +81,7 @@ conteiner-mob {
 
 .btn-light:focus, .btn-light:hover {
   background-color: #ecebeb;
+  cursor: pointer;
 }
 
 .btn-dark {
@@ -90,6 +91,7 @@ conteiner-mob {
 
 .btn-dark:focus, .btn-dark:hover {
   background-color: #c7133e;
+  cursor: pointer;
 }
 
 .btn-header {
@@ -104,6 +106,7 @@ conteiner-mob {
   font-size: 16px;
   line-height: calc(10 / 8);
   text-align: start;
+  cursor: pointer;
 }
 
 .btn-main {
@@ -115,7 +118,19 @@ conteiner-mob {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(21 / 16);
-  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1280px;
+  height: 665px;
+  padding-left: 115px;
+  padding-right: 115px;
+  margin: 0 auto;
+  background-image: url(../images/cafes-number.png), url(../images/foodtrucks-number.png), url(../images/girl-pic.png), url(../images/ice-cream.png), url(../images/eclipse-circle.png), url(../images/milk-pic.png);
+  background-repeat: no-repeat;
+  background-position: bottom 432px right 97px, bottom 341px right 97px, bottom 0px right 109px, bottom 0px right 450px, bottom 75px right 267px, bottom 45px right 1015px;
 }
 
 header {
@@ -126,29 +141,35 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding-top: 38px;
 }
 
-.header__bar .header__nav__list {
+.header__bar .header__logo {
+  position: absolute;
+  top: 37px;
+  left: -70px;
+}
+
+.header__bar .header__nav-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 110px;
-  margin-left: 110px;
+  margin-left: 240px;
 }
 
-.header__bar .header__nav__list .header__nav__item {
+.header__bar .header__nav-list .header__nav-item {
   margin-right: 35px;
 }
 
-.header__bar .header__nav__list .header__nav__item:last-child {
+.header__bar .header__nav-list .header__nav-item:last-child {
   margin-right: 0;
 }
 
-.header__bar .header__nav__list .header__nav__link {
+.header__bar .header__nav-list .header__nav-link {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -157,12 +178,13 @@ header {
   color: #ffffff;
 }
 
-.header__bar .header__nav__list .header__nav__link:hover, .header__bar .header__nav__list .header__nav__link:focus {
+.header__bar .header__nav-list .header__nav-link:hover, .header__bar .header__nav-list .header__nav-link:focus {
   color: #d41443;
 }
 
 .header__bar .btn-header {
   position: relative;
+  margin-left: 110px;
 }
 
 .header__bar .btn-header::after {
@@ -207,9 +229,17 @@ header {
   margin-top: 25px;
 }
 
+.hero__btns .btn-main {
+  margin-right: 15px;
+}
+
+.hero__btns .btn-main:last-child {
+  margin-right: 0;
+}
+
 .description {
   margin-top: 112px;
-  padding-bottom: 102px;
+  margin-left: 180px;
 }
 
 .description .description__text {

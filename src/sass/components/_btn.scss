@@ -5,6 +5,7 @@
     &:focus,
     &:hover {
       background-color: $btn-light-hover-bg-color;
+      cursor: pointer;
     }
   }
 
@@ -14,6 +15,7 @@
     &:focus,
     &:hover {
       background-color: $btn-dark-hover-bg-color;
+      cursor: pointer;
     }
   }
   &-header {
@@ -28,6 +30,7 @@
     font-size: 16px;
     line-height: calc(10 / 8);
     text-align: start;
+    cursor: pointer;
   }
 
   &-main {
@@ -39,6 +42,7 @@
     font-weight: 700;
     font-size: 16px;
     line-height: calc(21 / 16);
-    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
   }
 }
